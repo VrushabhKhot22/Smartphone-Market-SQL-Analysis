@@ -3,7 +3,7 @@
 📊 Project at a Glance
 Built an end-to-end SQL pipeline to analyze 1,200+ sales records. Designed a Star Schema to transform raw data into business insights.
 
-![Market Analysis Dashboard](Dashboard (2).png)
+![Market Analysis Dashboard](<Dashboard (2).png>)
 
 🏗️ Database Architecture
 Fact Table: fact_sales (Sales, Revenue, Profit)
