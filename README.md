@@ -1,24 +1,29 @@
 📱 Smartphone Sales Data Engineering & Analytics
-🎯 Project Overview
-This project simulates a real-world retail analytics environment. I designed a Star Schema database architecture, generated 1,200+ sales records using Python, and implemented advanced SQL scripts to track store performance and product rankings.
 
-🏗️ Data Architecture (Star Schema)
-To ensure optimized query performance, I implemented a dimensional model:
+📊 Project at a Glance
+Built an end-to-end SQL pipeline to analyze 1,200+ sales records. Designed a Star Schema to transform raw data into business insights.
 
-Fact Table: fact_sales (Orders, Quantity, Revenue, Profit)
+![Market Analysis Dashboard](Dashboard.png)
 
-Dimension Tables: dim_phones (Product specs), dim_stores (Location and Type)
+🏗️ Database Architecture
+Fact Table: fact_sales (Sales, Revenue, Profit)
 
-🛠️ Advanced SQL Features
-Data Modeling: Used Primary Keys and Foreign Keys to establish relationships between sales and products.
+Dimension Tables: dim_phones & dim_stores
 
-CTE & Window Functions: Used WITH clauses and DENSE_RANK() to identify the top 3 best-selling smartphone models per store location.
+Method: Star Schema (Optimized for Query Performance)
 
-Stored Procedures: Built CheckStoreTarget to automate performance tracking against business targets.
+🛠️ Technical Highlights
+Ranking: Used DENSE_RANK() to find the Top 3 models per store location.
 
-Views: Created v_executive_summary to join multiple tables into a single source of truth for reporting.
+Logic: Created CTEs and Views for a clean executive summary.
 
-Conditional Logic: Implemented CASE statements to categorize store performance status.
+Automation: Developed a Stored Procedure to track sales vs. targets.
 
-🚀 Automation
-Python Integration: Used a Python script to programmatically populate the 1,200+ records into the database, ensuring realistic data distribution for analysis.
+Data Seeding: Python script used to inject 1,200 records into MySQL.
+
+💡 Key Business Metrics
+Revenue & Profit Margin %
+
+Store-wise Performance Status (Target vs. Actual)
+
+Product Popularity Ranking
